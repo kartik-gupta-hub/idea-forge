@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaForge - AI Startup Generator</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="grid-overlay"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-brain"></i> IDEA<span>FORGE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#generator">Generate</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#submit">Submit</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Generator Section (Hero) -->
+        <section id="generator" class="hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-copy">
+                        <div class="eyebrow"><span></span> Neural venture studio online</div>
+                        <h1 class="hero-title">Initialize <span class="text-neon-cyan">Innovation</span>_</h1>
+                        <p class="hero-subtitle">Tap into a synthetic research engine that forges startup concepts with market signal, monetization logic, and build-ready product direction.</p>
+                        <div class="hero-actions" aria-label="Primary actions">
+                            <a href="#generator-console" class="cyber-btn primary compact"><i class="fas fa-wand-magic-sparkles"></i> Launch Forge</a>
+                            <a href="#trending" class="ghost-link">Explore signals <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="signal-strip" aria-label="IdeaForge platform stats">
+                            <div><strong>42K</strong><span>concepts forged</span></div>
+                            <div><strong>91%</strong><span>signal coverage</span></div>
+                            <div><strong>8.7s</strong><span>avg synthesis</span></div>
+                        </div>
+                    </div>
+
+                    <div class="terminal-box" id="generator-console">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">forge-ai-core v2.0</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-body">
+                            <p class="sys-msg">> forge-ai-core initialized</p>
+                            <p class="gen-msg">> market graph synced | neural cache warm | awaiting prompt<span class="terminal-cursor" aria-hidden="true"></span></p>
+                        </div>
+                        <div class="terminal-controls">
+                            <div class="custom-select" data-select>
+                                <label class="sr-only" for="industry-select">Select Industry</label>
+                                <select id="industry-select" class="native-select" aria-label="Select Industry">
+                                    <option value="any">Industry: Any</option>
+                                    <option value="fintech">FinTech</option>
+                                    <option value="healthtech">HealthTech</option>
+                                    <option value="cleantech">CleanTech</option>
+                                    <option value="edtech">EdTech</option>
+                                    <option value="saas">SaaS / B2B</option>
+                                </select>
+                                <button type="button" class="select-trigger" aria-label="Select Industry" aria-haspopup="listbox" aria-expanded="false">
+                                    <span>Industry: Any</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <ul class="select-menu" role="listbox" aria-label="Industry options">
+                                    <li role="option" data-value="any" aria-selected="true">Industry: Any</li>
+                                    <li role="option" data-value="fintech">FinTech</li>
+                                    <li role="option" data-value="healthtech">HealthTech</li>
+                                    <li role="option" data-value="cleantech">CleanTech</li>
+                                    <li role="option" data-value="edtech">EdTech</li>
+                                    <li role="option" data-value="saas">SaaS / B2B</li>
+                                </ul>
+                            </div>
+                            <button id="generate-btn" class="cyber-btn primary">
+                                <i class="fas fa-bolt"></i> Generate Idea
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Ideas Section -->
+        <section id="trending" class="trending section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-fire"></i> Trending Ideas</h2>
+                <div class="ideas-grid">
+                    <div class="idea-card">
+                        <div class="idea-badge fintech">FinTech</div>
+                        <h3 class="idea-title">Micro-Subscription Manager AI</h3>
+                        <p class="idea-desc">An AI agent that negotiates and automatically cancels or pauses micro-subscriptions (like Patreon or Substack) based on actual monthly usage.</p>
+                        <div class="idea-footer">
+                            <span class="votes"><i class="fas fa-arrow-up"></i> 1,204</span>
+                            <span class="status online">Viable</span>
+                        </div>
+                    </div>
+                    <div class="idea-card">
+                        <div class="idea-badge greentech">GreenTech</div>
+                        <h3 class="idea-title">Modular Kinetic Flooring</h3>
+                        <p class="idea-desc">Commercial flooring tiles that generate and store electricity from heavy foot traffic in malls and airports, with a real-time energy dashboard.</p>
+                        <div class="idea-footer">
+                            <span class="votes"><i class="fas fa-arrow-up"></i> 982</span>
+                            <span class="status online">Viable</span>
+                        </div>
+                    </div>
+                    <div class="idea-card">
+                        <div class="idea-badge saas">SaaS</div>
+                        <h3 class="idea-title">Meeting-to-Code Converter</h3>
+                        <p class="idea-desc">A tool that listens to technical architecture meetings and automatically generates foundational boilerplate code and README files.</p>
+                        <div class="idea-footer">
+                            <span class="votes"><i class="fas fa-arrow-up"></i> 856</span>
+                            <span class="status online">Viable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Idea Section -->
+        <section id="submit" class="submit section">
+            <div class="container">
+                <div class="submit-wrapper">
+                    <div class="submit-info">
+                        <h2 class="section-title">Contribute to the Forge</h2>
+                        <p>Have an idea that outsmarts our AI? Input your concept into the neural databanks for community evaluation.</p>
+                        <ul class="benefit-list">
+                            <li><i class="fas fa-check"></i> Instant AI Viability Score</li>
+                            <li><i class="fas fa-check"></i> Community Upvotes</li>
+                            <li><i class="fas fa-check"></i> Find Co-Founders</li>
+                        </ul>
+                    </div>
+                    <div class="submit-form-container">
+                        <form id="submit-form" class="cyber-form">
+                            <div class="form-group">
+                                <label for="idea-name">Project Codename</label>
+                                <input type="text" id="idea-name" class="cyber-input" placeholder="e.g. Project Nexus" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="idea-desc">Core Concept</label>
+                                <textarea id="idea-desc" class="cyber-input" rows="4" placeholder="Describe the problem and your solution..." required></textarea>
+                            </div>
+                            <button type="submit" class="cyber-btn secondary w-100">Upload to Matrix</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation Blog -->
+        <section id="blog" class="blog section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-newspaper"></i> Innovation Datafeed</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Matrix Code">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">// 2026.04.05</span>
+                            <h3>The Rise of Sentient SaaS</h3>
+                            <p>How auto-updating software is fundamentally changing the startup landscape.</p>
+                            <a href="#" class="read-more">Read Data <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-img blog-img-fallback">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Financial analytics dashboard with market data">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">// 2026.03.28</span>
+                            <h3>Funding in the Cyber Age</h3>
+                            <p>Crypto-metrics and AI venture capitalists: getting funded without a human pitch.</p>
+                            <a href="#" class="read-more">Read Data <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-brain"></i> IDEA<span>FORGE</span>
+                    </a>
+                    <p>Building tomorrow's unicorns using synthetic intelligence.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Core Data</h4>
+                    <ul>
+                        <li><a href="#generator">AI Generator</a></li>
+                        <li><a href="#trending">Trending</a></li>
+                        <li><a href="#submit">Submit Data</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Network</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IdeaForge Syndicate. All nodes secure.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
